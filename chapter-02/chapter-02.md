@@ -78,7 +78,7 @@ public class Window {
 }
 ```
 
-As you can see, it defines some attributes to store the window handle, its width and height and a callback function which will be invoked nay time the window is resized. It also defines an inner class to set up some options to control window creation:
+As you can see, it defines some attributes to store the window handle, its width and height and a callback function which will be invoked any time the window is resized. It also defines an inner class to set up some options to control window creation:
 
 * `compatibleProfile`: This controls wether we want to use old functions from previous versions (deprecated functions) or not. 
 * `fps`: Defines the target frames per second (FPS). If it has a value equal os less than zero it will mean that we do not want to set up a target but either use monitor refresh that as target FPS. In order to do so, we will use v-sync (that is the number of screen updates to wait from the time `glfwSwapBuffers` was called before swapping the buffers and returning).
@@ -235,7 +235,7 @@ public class Scene {
 }
 ```
 
-The `Render` class is just now another place holder that just clears the screen:
+The `Render` class is just now another placeholder that just clears the screen:
 
 ```java
 package org.lwjglb.engine.graph;
